@@ -1,0 +1,156 @@
+body {
+    background-color: whitesmoke;
+}
+::-webkit-calendar-picker-indicator {
+    padding-left: 70%;
+  }
+/* Information */
+.finance-info {
+    width: 24%;
+    background-color: #80BCBD;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.btn-warning {
+    background-color: #FFA447;
+}
+.btn-warning:hover {
+    background-color: #FE7A36;
+}
+.btn-red {
+    background-color: #BF3131;
+}
+.btn-red:hover {
+    background-color: #7D0A0A;
+}
+/* end Information */
+
+/* Search Filter */
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.search-from,
+.search-to {
+    width: 40%;
+}
+.filter div:last-child {
+    width: 15%;
+}
+.filter div button {
+    font-weight: bold;
+    width: 100%;
+}
+/* End Search Filter */
+
+/* Transaction and Product Details */
+.transaction-details {
+    width: 65%;
+}
+.transaction-details,
+.product-info {
+    background-color: white;
+}
+.product-wrapper {
+    width: 32.5%;
+}
+.product-info {
+    width: 100%;
+}
+.table-wrapper {
+    max-height: 450px;
+    overflow-y: auto;
+    position: relative;
+}
+table {
+    width: 100%;
+}
+thead {
+    background-color: #E5E1DA;
+    position: sticky;
+    top: 0;
+}
+tbody {
+    background-color: whitesmoke;
+}
+th,
+td {
+    padding: 8px;
+}
+/* End Transaction and Product Details */
+
+@media screen and (max-width: 992px) { 
+    .shortcut-filter {
+        margin-bottom: 12px;
+    }
+ }
+@media screen and (max-width: 780px) {
+
+    .information-wrapper div:first-child,
+    .filter,
+    .t-p-detail {
+        flex-direction: column;
+    }
+    /* Information */
+    .finance-info {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    /* End Information */
+
+    /* Search Filter */
+    .search-wrapper div,
+    .filter div,
+    .filter div:last-child {
+        width: 100%;
+    }
+    .search-wrapper div:last-child {
+        margin-top: 12px;
+    }
+    .filter div:last-child {
+        margin-top: 12px;
+        text-align: center;
+    }
+    .filter div button {
+        width: 40%;
+    }
+    .filter i {
+        display: none;
+    }
+    .search-to {
+        margin-top: 12px;
+    }
+    /* End Search Filter */
+
+    /* Transaction nad Product Detail */
+    .transaction-details,
+    .product-wrapper {
+        width: 100%;
+    }
+    .transaction-details div:first-child{
+        flex-direction: column;
+    }
+
+    .product-wrapper {
+        margin-top: 24px;
+    }
+    /* End Transaction nad Product Detail */
+}
+
+@media screen and (max-width: 480px) {
+    .shortcut-filter {
+        flex-direction: column;
+    }
+    .shortcut-filter form {
+        margin-bottom: 12px;
+    }
+    .shortcut-filter form button {
+        width: 100%;
+    }
+    .search-wrapper div:last-child form {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

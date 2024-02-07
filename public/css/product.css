@@ -1,0 +1,111 @@
+.btn {
+    border: 0;
+}
+/* .update {
+    background: rgb(20,30,70);
+    background: linear-gradient(13deg, rgba(20,30,70,1) 15%, rgba(34,51,118,1) 50%, rgba(20,30,70,1) 85%);
+}
+.update:hover {
+    background: rgb(34,51,118);
+    background: linear-gradient(13deg, rgba(34,51,118,1) 15%, rgba(34,51,118,1) 50%, rgba(34,51,118,1) 85%);
+} */
+.insert {
+    background: rgb(115,2,34);
+    background: linear-gradient(13deg, rgba(115,2,34,1) 15%, rgba(157,2,46,1) 50%, rgba(115,2,34,1) 85%);
+}
+.insert:hover {
+    background: rgb(157,2,46);
+    background: linear-gradient(13deg, rgba(157,2,46,1) 15%, rgba(157,2,46,1) 50%, rgba(157,2,46,1) 85%);
+} 
+
+.bg-input {
+    background-color: rgb(240, 237, 237);
+}
+.content-wrapper {
+    width: 100%;
+}
+.product-info,
+.content,
+.wrapper,
+.filtering {
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+
+.product-info {
+    background: rgb(149,149,149);
+    background: linear-gradient(13deg, rgba(149,149,149,1) 15%, rgba(233,233,233,1) 50%, rgba(149,149,149,1) 85%);
+    width: 68%;
+    padding: 8px 8px 0;
+    height: 570px;
+}
+
+.support-content {
+    width: 30%;
+    margin-left: 8px;
+}
+.content {
+    background: rgb(204,200,170);
+    background: linear-gradient(17deg, rgba(204,200,170,1) 15%, rgba(233,233,233,1) 50%, rgba(204,200,170,1) 85%);
+}
+
+/* Product Detail */
+
+.wrapper {
+    background-color: rgb(187, 184, 184);
+}
+
+.warning {
+    color: yellow;
+}
+
+.img-product {
+    aspect-ratio: 4/4;
+    width: 150px;
+    object-fit: cover;
+}
+
+.filtering {
+    background-color: #81a7a9;
+}
+
+.all-transaction {
+    background-color: rgba(0,0,0,0);
+    color: blue;
+}
+
+.all-transaction:hover {
+    color: rgb(0, 81, 255);
+}
+
+@media screen and (max-width: 990px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .product-info,
+    .support-content {
+        width: 100%;
+    }
+
+    .support-content {
+        margin: 24px 0 0 0;
+    }
+    .table-wrapper{
+        height: 80%;
+        overflow-x: auto;
+    }
+    .paginate {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    #pict {
+        margin-top: 8px;
+        width: 100%;
+    }
+    .img-product {
+        width: 110px;
+    }
+}

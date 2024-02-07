@@ -1,0 +1,143 @@
+.nav-top,
+.nav-bottom {
+    background-color: #9BB8CD;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-top{
+    top: 0;
+    padding: 10px 6%;
+}
+.nav-top section.brand img{
+    width: 100px;
+}
+.brand {
+    margin-right: 35px;
+}
+
+.menu {
+    margin-right: 24px;
+}
+
+
+section.menu ul,
+section.menu ul li {
+    display: flex;
+}
+
+section.menu ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+section.menu ul li {
+    margin-right: 24px;
+    align-items: end;
+}
+section.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+section.menu ul li i {
+    font-size: 2rem;
+}
+
+.alert {
+    margin-bottom: 0;
+}
+.active{
+    font-weight: bold;
+    color: black;
+}
+
+.nav-bottom {
+    display: none;
+}
+.nav-dropdown-menu {
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 6px;
+    padding: 0;
+    visibility: hidden;
+}
+.open {
+    visibility: visible;
+}
+.divide-3 {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(156, 156, 156);
+}
+.nav-dropdown-item {
+    padding: 6px 0;
+}
+
+.logout,
+.profile-info{
+    width: 100%;
+    padding: 3px 8px;
+}
+.profile-info:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.logout:hover {
+    background-color: rgb(215, 18, 18);
+}
+.logout:hover i,
+.logout:hover a{
+    color: white;
+}
+.alert-nav-bottom {
+    display: none;
+    visibility: hidden;
+}
+
+.activeIcon {
+    color: black;
+}
+
+@media screen and (max-width: 890px) {
+    nav i {
+        color: rgb(83, 83, 83);
+    }
+    .menu {
+        margin: 0 24px;
+    }
+    section.menu ul li {
+        margin-right: 0;
+    }
+    .nav-top {
+        display: none;
+    }
+    .nav-bottom {
+        display: block;
+        bottom: 0;
+    }
+    .menu ul {
+        justify-content: space-between;
+    }
+    .nav-dropdown-menu {
+        top: -100px;
+        right: 0;
+    }
+    div.alert {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .alert-nav-bottom {
+        display: block;
+        visibility: visible;
+    }
+
+}

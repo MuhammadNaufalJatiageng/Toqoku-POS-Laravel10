@@ -1,0 +1,51 @@
+.wrapper {
+    height: 80vh;
+}
+.bg-receipt-info {
+    background-color: white;
+}
+.receipt-wrapper div{
+    height: 100%;
+}
+
+.receipt-wrapper {
+    height: 75vh;
+    overflow-y: auto;
+    background-color: white;
+}
+
+td {
+    padding: 0 4px;
+    font-size: small;
+}
+
+.receipt-header h5 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+.receipt-header p {
+    font-size: .8rem;
+}
+.receipt-header small {
+    font-size: .6rem;
+    display: block;
+}
+.print {
+    width: 90%;
+    font-weight: bold;
+}
+.details tr td{
+    padding: 4px;
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .receipt-wrapper {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .col-lg-5 {
+        margin-bottom: 60px;
+    }
+}
