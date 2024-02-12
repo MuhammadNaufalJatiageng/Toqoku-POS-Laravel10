@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function() {
     
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/', [DashboardController::class, 'search']);   
+    Route::post('/purchase', [ReceiptController::class, 'store']);
     Route::patch('/store/update/{id}', [StoreController::class, 'update']);
 
     Route::prefix('product')->group(function (){
@@ -58,6 +59,5 @@ Route::middleware('auth')->group(function() {
     });
 });
 
-Route::post('/purchase', [ReceiptController::class, 'store']);
 
 require __DIR__.'/auth.php';
