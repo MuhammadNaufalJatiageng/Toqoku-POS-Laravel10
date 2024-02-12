@@ -83,7 +83,8 @@ function getTotal(){
         return accumulator + object;
     }, 0);
 
-    let discount = document.querySelector('#discount').value;
+    let discount = document.querySelector('#discountValue').value;
+    // console.log(discount);
     discount = parseTheRupiah(discount);
 
     if (isNaN(discount)) {
@@ -118,21 +119,22 @@ function submitForm(params) {
 
 function discount(params) {
     document.querySelector('#discount').value = 0;
+    document.querySelector('#discountValue').value = 0;
     getTotal();
 
     let nominal = 0;
     let total = parseTheRupiah(totalPrice[0].innerHTML);
     if(params == '2%')
     {
-        nominal = ( total * 2)/100;
+        nominal = String(( total * 2)/100);
     }
     if(params == '5%')
     {
-        nominal = ( total * 5)/100;
+        nominal = String(( total * 5)/100);
     }
     if(params == '10%')
     {
-        nominal = ( total * 10)/100;
+        nominal = String(( total * 10)/100);
     }
     if(params == '5k')
     {
@@ -143,6 +145,7 @@ function discount(params) {
         nominal = "10.000";
     }
 
+    console.log(nominal);
     document.querySelector('#discount').value = nominal;
     document.querySelector('#discountValue').value = parseTheRupiah(nominal);
     getTotal();
