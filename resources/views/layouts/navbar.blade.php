@@ -1,6 +1,6 @@
 <nav class="nav-top">
     <section class="brand">
-      <img src="{{ asset('/storage/img/toqoku-full.png') }}" alt="">
+      <img src="{{ asset('/img/toqoku-full.png') }}" alt="">
     </section>
 
     <section class="menu">

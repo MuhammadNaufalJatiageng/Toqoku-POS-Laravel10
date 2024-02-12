@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -95,6 +96,8 @@ class ProductController extends Controller
         if($data->picture){
             Storage::delete('/public/'.$data->picture);
         }
+        
+        Cart::where('product_id', $id)->delete();
 
         $data->delete();
 

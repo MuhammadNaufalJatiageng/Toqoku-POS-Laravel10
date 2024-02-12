@@ -75,7 +75,7 @@
                         @if ($product->picture)
                             <img src="{{ asset('storage/'. $product->picture) }}" class="img-product img-thumbnail" alt="...">
                         @else
-                            <img src="{{ asset('storage/img/noPict.jpg') }}" class="img-product img-thumbnail" alt="...">
+                            <img src="{{ asset('img/noPict.jpg') }}" class="img-product img-thumbnail" alt="...">
                         @endif
 
                         {{-- Image Update Preview --}}
